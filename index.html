@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tran — UGC Foundations</title>
+<meta name="description" content="ICU nurse to 500+ brand deals. UGC Foundations has trained 5,000+ alumni to make real money creating 30-second videos for brands.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0807;--bg-2:#120f0c;--surface:#1c1814;--line:rgba(251,146,60,.15);--text:#fef3e5;--muted:#a89b8d;--peach:#fb923c;--peach-2:#fdba74;--sage:#a7f3d0;--cream:#fef3c7}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,rgba(251,146,60,.02) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-30%;left:-10%;width:70%;height:80%;background:radial-gradient(circle,rgba(251,146,60,.07) 0%,rgba(167,243,208,.03) 30%,transparent 60%);pointer-events:none;z-index:0}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:28px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,8,7,.94);backdrop-filter:blur(14px);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.02em}
+.logo span{background:linear-gradient(135deg,var(--peach) 0%,var(--peach-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--peach) 0%,var(--peach-2) 100%);color:#0a0807;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+section{padding:100px 0}
+.eyebrow{display:inline-block;padding:6px 14px;background:rgba(251,146,60,.08);border:1px solid rgba(251,146,60,.3);border-radius:20px;font-size:12px;font-weight:600;color:var(--peach-2);letter-spacing:.15em;text-transform:uppercase;margin-bottom:24px}
+h1{font-size:clamp(42px,6vw,76px);font-weight:800;line-height:1.03;letter-spacing:-.03em;margin-bottom:24px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--peach) 0%,var(--peach-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:clamp(32px,4vw,48px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px}
+h3{font-size:22px;font-weight:600;margin-bottom:14px}
+p{color:var(--muted);font-size:17px;max-width:680px}
+.hero{padding-top:80px;text-align:center}
+.hero p{font-size:20px;margin:0 auto 40px;max-width:720px}
+.cta-primary{display:inline-block;padding:18px 38px;background:linear-gradient(135deg,var(--peach) 0%,var(--peach-2) 100%);color:#0a0807;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 10px 40px rgba(251,146,60,.3);transition:.2s}
+.cta-primary:hover{transform:translateY(-2px)}
+.vsl-box{max-width:900px;margin:60px auto;aspect-ratio:16/9;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative}
+.vsl-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(251,146,60,.08) 0%,transparent 60%)}
+.play-btn{width:88px;height:88px;border-radius:50%;background:rgba(251,146,60,.15);border:2px solid var(--peach);display:flex;align-items:center;justify-content:center;z-index:1}
+.play-btn svg{width:32px;height:32px;fill:var(--peach-2);margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:80px 0 0;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-num{font-size:40px;font-weight:800;background:linear-gradient(135deg,var(--peach) 0%,var(--peach-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em}
+.stat-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:6px}
+.problem-grid,.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.card:hover{border-color:rgba(251,146,60,.4);transform:translateY(-4px)}
+.card-num{font-size:14px;color:var(--peach-2);font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px}
+.card h3{color:var(--text)}
+.card p{font-size:15px}
+.divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--line) 50%,transparent 100%)}
+.lead-capture{background:linear-gradient(135deg,rgba(251,146,60,.08) 0%,rgba(167,243,208,.03) 100%);border:1px solid rgba(251,146,60,.2);border-radius:24px;padding:70px 60px;text-align:center;margin:80px 0}
+.lead-capture h2{max-width:640px;margin:0 auto 20px}
+.form-row{display:flex;gap:12px;max-width:520px;margin:36px auto 0}
+.form-row input{flex:1;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit}
+.form-row input:focus{outline:none;border-color:var(--peach)}
+.form-row button{padding:18px 32px;background:linear-gradient(135deg,var(--peach) 0%,var(--peach-2) 100%);color:#0a0807;border:none;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.offer-box{background:linear-gradient(135deg,#10100b 0%,#1c1a14 100%);border:1px solid rgba(251,146,60,.25);border-radius:24px;padding:60px;margin-top:40px}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.offer-price{font-size:44px;font-weight:800;background:linear-gradient(135deg,var(--peach) 0%,var(--peach-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em;line-height:1.1}
+.offer-price small{font-size:15px;color:var(--muted);font-weight:500;-webkit-text-fill-color:var(--muted);display:block;margin-top:8px}
+.feature-list{list-style:none;margin-top:24px}
+.feature-list li{padding:12px 0;color:var(--text);display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.feature-list li::before{content:'○';color:var(--peach-2);font-weight:700;flex-shrink:0}
+.bio{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:center}
+.bio-img{aspect-ratio:4/5;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:20px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:18px;color:var(--text)}
+.faq-plus{width:24px;height:24px;position:relative;flex-shrink:0}
+.faq-plus::before,.faq-plus::after{content:'';position:absolute;background:var(--peach-2);top:50%;left:50%;transition:.3s}
+.faq-plus::before{width:14px;height:2px;transform:translate(-50%,-50%)}
+.faq-plus::after{width:2px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.3s}
+.faq-item.open .faq-a{max-height:300px;padding-top:14px}
+.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:14px}
+@media(max-width:768px){.problem-grid,.pillar-grid,.stats{grid-template-columns:1fr}.offer-grid,.bio{grid-template-columns:1fr}.lead-capture,.offer-box{padding:40px 24px}.form-row{flex-direction:column}section{padding:70px 0}.stats{gap:20px;grid-template-columns:repeat(2,1fr)}}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style></head><body>
+<nav><div class="container nav-inner"><div class="logo">UGC <span>FOUNDATIONS</span></div><a href="#apply" class="nav-cta">Join</a></div></nav>
+<section class="hero"><div class="container">
+<div class="eyebrow reveal">ICU NURSE → 500+ BRAND DEALS</div>
+<h1 class="reveal">Make Real Money <em>Creating 30-Second Videos</em> For Brands</h1>
+<p class="reveal">UGC Foundations has trained 5,000+ alumni to land brand deals without needing followers, a polished aesthetic, or a camera crew. Just your phone, a niche, and the pitch that works.</p>
+<div class="vsl-box reveal"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+<a href="#apply" class="cta-primary reveal">Get The UGC Starter →</a>
+<div class="stats reveal">
+<div><div class="stat-num">5,000+</div><div class="stat-label">Alumni</div></div>
+<div><div class="stat-num">500+</div><div class="stat-label">Brand Deals</div></div>
+<div><div class="stat-num">$10-20K</div><div class="stat-label">Monthly Range</div></div>
+<div><div class="stat-num">68K</div><div class="stat-label">Community</div></div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="eyebrow reveal">THE PROBLEM</div>
+<h2 class="reveal">Most People Try UGC<br>And Get Ignored By Brands</h2>
+<p class="reveal" style="font-size:18px">It's not because UGC doesn't work. It's because nobody's taught them how brands actually decide who to hire.</p>
+<div class="problem-grid">
+<div class="card reveal"><div class="card-num">MYTH 01</div><h3>"I Need A Following"</h3><p>False. UGC creators with under 1,000 followers book deals daily. Your portfolio matters. Your followers don't.</p></div>
+<div class="card reveal"><div class="card-num">MYTH 02</div><h3>"I Need To Be On Camera"</h3><p>False. Plenty of UGC is voiceover, product shots, or hands-only. Many of my top students never show their face.</p></div>
+<div class="card reveal"><div class="card-num">MYTH 03</div><h3>"UGC = Influencing"</h3><p>False. Influencers build audiences and get paid for reach. UGC creators build portfolios and get paid per video. Different jobs.</p></div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="eyebrow reveal">THE FRAMEWORK</div>
+<h2 class="reveal">The 5-Part UGC Foundation</h2>
+<div class="pillar-grid">
+<div class="card reveal"><div class="card-num">PART 1</div><h3>Niche + Portfolio</h3><p>Pick a niche brands hire in. Build a 5-video portfolio that demonstrates skill. Specific beats generic every time.</p></div>
+<div class="card reveal"><div class="card-num">PART 2</div><h3>The Pitch System</h3><p>Daily pitching with the exact template that has landed thousands of first deals. Email + DM + LinkedIn outreach.</p></div>
+<div class="card reveal"><div class="card-num">PART 3</div><h3>Delivery + Negotiation</h3><p>How to actually create the deliverables brands pay for. Rate setting, contracts, revisions, usage rights.</p></div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="lead-capture reveal">
+<div class="eyebrow">FREE RESOURCE</div>
+<h2>The UGC Starter + Pitch Template</h2>
+<p style="margin:0 auto">The exact pitch I still use to land brand deals. Plus a 10-page PDF on niche selection and portfolio basics. No fluff.</p>
+<form class="form-row" onsubmit="event.preventDefault();alert('Check your inbox — starter sent.')">
+<input type="email" placeholder="Enter your email" required><button type="submit">Send It →</button>
+</form>
+</div>
+</div></section>
+<div class="divider"></div>
+<section id="apply"><div class="container">
+<div class="eyebrow reveal">THE MASTERCLASS</div>
+<h2 class="reveal">UGC Foundations Masterclass</h2>
+<div class="offer-box reveal"><div class="offer-grid">
+<div>
+<div class="offer-price">Accessible Pricing<small>Masterclass + Community + Premium Coaching tiers available</small></div>
+<p style="margin-top:16px">Foundations Masterclass is fixed-price. Private community (Skool) and 1-on-1 coaching are application-based. Payment plans standard.</p>
+<ul class="feature-list">
+<li>10+ hours of curriculum across 5 modules</li>
+<li>Complete niche selection framework</li>
+<li>Portfolio development guide + examples</li>
+<li>The pitch template (email, DM, LinkedIn)</li>
+<li>Contract + rate-setting templates</li>
+<li>5,000+ alumni private community access</li>
+<li>Weekly live Q&A with Tran</li>
+<li>Lifetime access to course updates</li>
+</ul>
+</div>
+<div><div style="background:rgba(251,146,60,.08);border:1px solid rgba(251,146,60,.2);border-radius:16px;padding:32px;text-align:center">
+<div class="eyebrow">PROOF</div>
+<h3 style="margin-bottom:12px">Rachel. ER Nurse.<br>$6,200/Mo By Month 5.</h3>
+<p style="margin:0 auto 24px">ER nurse in Denver with two kids. Niched into wellness brands. 18 paid deals in month 5. Still part-time nursing — now by choice.</p>
+<a href="#" class="cta-primary" style="width:100%">Join Now →</a>
+</div></div>
+</div></div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container">
+<div class="bio">
+<div class="bio-img reveal">[Tran's photo]</div>
+<div class="reveal">
+<div class="eyebrow">ABOUT TRAN</div>
+<h2>From ICU Shifts To 500+ Brand Deals</h2>
+<p style="font-size:17px;margin-top:20px">Former ICU nurse in Phoenix. Left bedside nursing after two years of burning out on 13-hour shifts. Started UGC in 2023, landed my first $125 deal a week in, and scaled to 500+ brand deals across major brands.</p>
+<p style="margin-top:16px">Now earning $10-20K a month creating 30-second videos from my living room. Built UGC Foundations to teach other women — especially healthcare workers, corporate burnouts, and moms who want out — the exact system. 5,000+ alumni and counting.</p>
+</div>
+</div>
+</div></section>
+<div class="divider"></div>
+<section><div class="container" style="max-width:820px">
+<div class="eyebrow reveal">FAQ</div>
+<h2 class="reveal">Common Questions</h2>
+<div style="margin-top:40px">
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>Do I need followers to start?</span><div class="faq-plus"></div></div><div class="faq-a"><p>No. UGC is about portfolio, not following. Most of my students land their first paid deal with under 1,000 followers.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>Do I need to be on camera?</span><div class="faq-plus"></div></div><div class="faq-a"><p>No. Many successful UGC creators use voiceover, product shots, or hands-only content. Face-on camera is a stylistic choice, not a requirement.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>How much time per day?</span><div class="faq-plus"></div></div><div class="faq-a"><p>Most students spend 1-2 hours/day in the first 90 days (pitching + portfolio work). Once booked deals come in, time shifts to content creation. Usually 2-4 hours/day at $5K+/month tier.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>How long until I'm paid?</span><div class="faq-plus"></div></div><div class="faq-a"><p>Most students land their first paid deal within 30-60 days of starting Foundations. First consistent $2K+/month typically months 4-6.</p></div></div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')"><div class="faq-q"><span>Do you work with men?</span><div class="faq-plus"></div></div><div class="faq-a"><p>Yes. Most of my community is women (especially healthcare workers) but men are welcome. The framework is gender-neutral — the community just skews one way.</p></div></div>
+</div>
+</div></section>
+<section style="text-align:center"><div class="container">
+<h2 class="reveal">Your First Brand Deal Is Waiting</h2>
+<p class="reveal" style="margin:20px auto 40px">Grab the UGC Starter. Build your first portfolio video this week.</p>
+<a href="#apply" class="cta-primary reveal">Get The Starter →</a>
+</div></section>
+<footer class="footer"><div class="container"><p>© 2026 UGC Foundations · Phoenix, AZ</p></div></footer>
+<script>const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));</script>
+</body></html>
